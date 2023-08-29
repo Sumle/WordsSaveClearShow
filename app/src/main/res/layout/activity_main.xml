@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CFBDFB"
+        android:text="Type a word"
+        android:textAlignment="center"
+        android:textColor="#ff6750a4"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type..."
+        android:inputType="text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_edit_name">
+
+        <Button
+            android:id="@+id/save_word"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Save word"
+            android:textColor="#58B825" />
+
+        <Button
+            android:id="@+id/clear_words"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Clear word"
+            android:textColor="#B32323" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/show_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show words"/>
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Show the word list"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
